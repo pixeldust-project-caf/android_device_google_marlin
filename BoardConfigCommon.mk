@@ -21,3 +21,6 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Telephony
 TARGET_PROVIDES_TELEPHONY_EXT := true
 
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
+
