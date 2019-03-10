@@ -1,8 +1,10 @@
 # Common board config for marlin, sailfish
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_CONFIG := pa_marlin_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/marlin
