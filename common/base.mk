@@ -836,8 +836,8 @@ PRODUCT_COPY_FILES += \
 -include frameworks/base/data/videos/VideoPackage1.mk
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-  SystemUIGoogle \
-  SettingsGoogle \
+  SystemUI \
+  Settings \
   NexusLauncherPrebuilt \
 
 PRODUCT_LOADED_BY_PRIVILEGED_MODULES += \
