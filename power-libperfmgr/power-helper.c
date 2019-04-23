@@ -28,7 +28,7 @@
  */
 
 #define LOG_NIDEBUG 0
-#define LOG_TAG "android.hardware.power@1.2-service.marlin-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.crosshatch-libperfmgr"
 
 #include <errno.h>
 #include <inttypes.h>
@@ -48,7 +48,7 @@
 #endif
 
 #ifndef WLAN_POWER_STAT
-#define WLAN_POWER_STAT "/d/wlan_wcnss/power_stats"
+#define WLAN_POWER_STAT "/d/wlan0/power_stats"
 #endif
 
 #define ARRAY_SIZE(x) (sizeof((x))/sizeof((x)[0]))
