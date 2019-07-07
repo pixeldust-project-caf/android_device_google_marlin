@@ -209,3 +209,6 @@
 
 # b/70518189 vDSO experiments
 /sys/module/vdso/parameters  u:object_r:sysfs_vdso:s0
+
+# Lineage hardware
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.sdm              u:object_r:hal_lineage_livedisplay_default_exec:s0
