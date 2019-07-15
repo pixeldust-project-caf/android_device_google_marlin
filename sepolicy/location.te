@@ -51,6 +51,7 @@ allow location location_data_file:{ file sock_file } create_file_perms;
 userdebug_or_eng(`
   allow location diag_device:chr_file rw_file_perms;
 ')
+allow location diag_device:chr_file { read write };
 
 # netd is a vendor daemon that is on /system; its functionality is related to
 # cellular data; since we allow telephony and telephony-data violations on

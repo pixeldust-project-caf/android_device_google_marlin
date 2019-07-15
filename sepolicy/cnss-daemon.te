@@ -29,3 +29,4 @@ r_dir_file(cnss-daemon, sysfs_msm_subsys)
 userdebug_or_eng(`
   allow cnss-daemon diag_device:chr_file rw_file_perms;
 ')
+allow cnss-daemon diag_device:chr_file { read write };

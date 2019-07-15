@@ -32,6 +32,7 @@ allow thermal-engine uio_device:chr_file rw_file_perms;
 userdebug_or_eng(`
   allow thermal-engine diag_device:chr_file rw_file_perms;
 ')
+allow thermal-engine diag_device:chr_file { read write };
 
 # reboot/shutdown for thermal limits exceeded
 set_prop(thermal-engine, powerctl_prop)

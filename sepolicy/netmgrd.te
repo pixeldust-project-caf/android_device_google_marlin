@@ -57,6 +57,7 @@ allow netmgrd sysfs_net:file write;
 userdebug_or_eng(`
   allow netmgrd diag_device:chr_file rw_file_perms;
 ')
+allow netmgrd diag_device:chr_file { read write };
 
 # For netmgrd to be able to execute netutils wrappers
 domain_trans(netmgrd, netutils_wrapper_exec, netutils_wrapper)
