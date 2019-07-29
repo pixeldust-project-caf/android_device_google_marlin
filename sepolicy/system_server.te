@@ -26,6 +26,10 @@ r_dir_file(system_server, keylayout_file)
 # kgsl
 allow system_server debugfs_kgsl:file { open read getattr };
 
+# Smart Charging
+allow system_server sysfs_batteryinfo:file write;
+allow system_server sysfs_battery_supply:file { getattr open write };
+
 userdebug_or_eng(`
   allow system_server diag_device:chr_file rw_file_perms;
 ')
