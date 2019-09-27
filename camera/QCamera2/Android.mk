@@ -70,8 +70,8 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/util \
         $(LOCAL_PATH)/HAL3 \
         hardware/libhardware/include/hardware \
-        hardware/qcom/media/msm8996/libstagefrighthw \
-        $(TARGET_OUT_HEADERS)/mm-core/omxcore \
+        $(call project-path-for,qcom-media)/msm8996/libstagefrighthw \
+        $(call project-path-for,qcom-media)/mm-core/omxcore \
         system/core/include/cutils \
         system/core/include/system \
         system/media/camera/include/system
@@ -101,7 +101,7 @@ LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
 LOCAL_C_INCLUDES += \
         $(TARGET_OUT_HEADERS)/qcom/display
 LOCAL_C_INCLUDES += \
-        hardware/qcom/display/msm8996/libqservice
+        $(call project-path-for,qcom-display)/msm8996/libqservice
 LOCAL_SHARED_LIBRARIES := liblog libhardware libutils libcutils libdl libsync
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder

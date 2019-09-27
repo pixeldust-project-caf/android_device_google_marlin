@@ -39,8 +39,8 @@ LOCAL_C_INCLUDES += \
     external/skia/include/core \
     external/skia/include/images \
     $(TARGET_OUT_HEADERS)/qcom/display \
-    $(LOCAL_HAL_TOP)/QCamera2/stack/common \
-    $(LOCAL_HAL_TOP)/QCamera2/stack/mm-camera-interface/inc \
+    $(call project-path-for,qcom-camera)/QCamera2/stack/common \
+    $(call project-path-for,qcom-camera)/QCamera2/stack/mm-camera-interface/inc \
     frameworks/av/include/media/stagefright \
     frameworks/native/include/media/openmax \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
